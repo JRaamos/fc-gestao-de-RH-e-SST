@@ -4,7 +4,7 @@ import Header from '../components/Header';
  function Home() {
   return (
     <div className=''>
-      <header>
+      <header className='flex items-center justify-center w-full'>
         <Header/>
       </header>
     </div>
