@@ -1,13 +1,16 @@
 import { useState } from 'react'
 
 import './App.css'
+import { Route ,Routes } from 'react-router-dom'
+import Home from './pages/Home'
 
 function App() {
 
   return (
-    <>
-    <h1>Febraio cerqueira RH</h1>
-    </>
+    <Routes>
+      <Route path="/" Component={Home} />
+    </Routes>
+
   )
 }
 
