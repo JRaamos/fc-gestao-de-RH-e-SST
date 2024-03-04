@@ -29,8 +29,8 @@ function MainContent() {
             </div>
             <button
               type="button"
-              className="border-indigo-400 mt-8 rounded-full border-2 p-2 w-52
-               hover:bg-indigo-800 hover:text-white transition bg-indigo-300
+              className=" mt-8 rounded-full border-2 p-2 w-52
+               hover:bg-indigo-900 text-white transition bg-indigo-700
                duration-500 ease-in-out transform hover:scale-110 font-medium font-sans"
             >
               Solicite uma Proposta

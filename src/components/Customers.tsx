@@ -6,7 +6,7 @@ function Customers() {
       <h1 className="m-5 mb-8 text-2xl font-bold font-mono">
         Clientes satisfeitos
       </h1>
-      <section className="w-[90%] m-auto">
+      <section className="w-[90%] m-auto h-96">
         <Carousel />
       </section>
     </div>

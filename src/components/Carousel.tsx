@@ -22,12 +22,12 @@ function Carousel() {
 
   return (
     <Slider { ...settings }>
-      <h3>1</h3>
-      <h3>2</h3>
-      <h3>3</h3>
-      <h3>4</h3>
-      <h3>5</h3>
-      <h3>6</h3>
+      <img src="" alt="cliente 1" className="h-32 border text-center mx-2 " />
+      <img src="" alt="cliente 2" className="h-32 border text-center" />
+      <img src="" alt="cliente 3" className="h-32 border text-center mx-2" />
+      <img src="" alt="cliente 4" className="h-32 border text-center" />
+      <img src="" alt="cliente 5" className="h-32 border text-center mx-2" />
+      <img src="" alt="cliente 6" className="h-32 border text-center" />
     </Slider>
   );
 }
