@@ -1,9 +1,12 @@
 /* eslint-disable react/jsx-max-depth */
+import { useState } from 'react';
 import Customers from './Customers';
 import trabalhador from '../../public/trabalhador.jpg';
 import sstWord from '../../public/sst-word.png';
+import FormsContact from './FormsContact';
 
 function MainContent() {
+  const [showModal, setShowModal] = useState<boolean>(false);
   return (
     <div>
       <div className="flex justify-center items-center ">
@@ -56,6 +59,34 @@ function MainContent() {
       <div className="mt-10">
         <Customers />
       </div>
+      {showModal && <div className="fixed inset-0 bg-black opacity-50 z-50" />}
+      {showModal && (
+        <div className="fixed inset-0 flex items-center justify-center z-50">
+          <div className="absolute inset-0 bg-black opacity-50" />
+          <div
+            className="relative bg-white w-[70%] h-[70vh] flex flex-col
+           justify-between rounded-2xl shadow-lg"
+          >
+            <button
+              className="absolute top-0 right-5 m-4 hover:text-gray-700
+              text-5xl font-bold  rounded-full w-10 h-10"
+              onClick={ () => setShowModal(false) }
+            >
+              x
+            </button>
+            <div className="p-8">
+              <FormsContact />
+            </div>
+          </div>
+        </div>
+      )}
+
+      <button
+        onClick={ () => setShowModal(true) }
+        className="w-20 fixed bottom-2 right-6 border rounded-full h-20 bg-white"
+      >
+        <img src="" alt="contact" />
+      </button>
     </div>
   );
 }
