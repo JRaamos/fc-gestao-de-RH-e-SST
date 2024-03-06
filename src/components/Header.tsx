@@ -2,7 +2,10 @@ import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <div className="w-[98%] border top-4 fixed flex items-center justify-around">
+    <div
+      className="w-full border top-0 fixed flex items-center justify-around h-14
+     bg-white"
+    >
       <img src="" alt="logo" />
       <nav className="w-1/2 flex justify-evenly">
         <Link to="/">Home</Link>

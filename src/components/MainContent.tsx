@@ -6,17 +6,17 @@ import sstWord from '../../public/sst-word.png';
 function MainContent() {
   return (
     <div>
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center ">
         <div
           className=" w-8/12 flex flex-col justify-center
         items-center text-wrap text-justify"
         >
           <div className="flex flex-col items-center mt-16 font-mono">
             <div>
-              <h2 className=" font-bold font-mono  text-3xl w-96 text-start m-2">
+              <h2 className=" font-bold font-mono  text-3xl w-96 text-start m-2 ">
                 Já enviou as Informações do SST da sua empresa para o eSocial?
               </h2>
-              <p className="w-96 mb-6 m-2 text-red-500 text-xl">
+              <p className="w-96 mb-6 m-2 text-red-600 text-2xl font-bold font-sans ">
                 Nós podemos te Ajudar !
               </p>
               <div className="w-96 text-start m-2 text-xl">
@@ -29,15 +29,16 @@ function MainContent() {
             </div>
             <button
               type="button"
-              className=" mt-8 rounded-full border-2 p-2 w-52
-               hover:bg-indigo-900 text-white transition bg-indigo-700
-               duration-500 ease-in-out transform hover:scale-110 font-medium font-sans"
+              className=" mt-8 rounded-full border-2 p-2 w-52 shadow-md shadow-black
+               hover:bg-indigo-900  transition bg-white
+               duration-500 ease-in-out transform hover:scale-110 font-medium font-sans
+               text-indigo-950 hover:text-white hover:border-indigo-900"
             >
               Solicite uma Proposta
             </button>
           </div>
         </div>
-        <div className="w-1/2  flex justify-center flex-col items-center ">
+        <div className="w-1/2  flex justify-center flex-col items-center mt-10">
           <div>
             <img
               src={ trabalhador }

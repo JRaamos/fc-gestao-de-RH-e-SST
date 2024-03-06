@@ -11,7 +11,6 @@ function Carousel() {
     dots: true,
     infinite: false,
     speed: 500,
-    autoplay: true,
     slidesToScroll: 1,
     autoplaySpeed: 6000,
     slidesToShow: 3,
@@ -22,12 +21,12 @@ function Carousel() {
 
   return (
     <Slider { ...settings }>
-      <img src="" alt="cliente 1" className="h-32 border text-center mx-2 " />
-      <img src="" alt="cliente 2" className="h-32 border text-center" />
-      <img src="" alt="cliente 3" className="h-32 border text-center mx-2" />
-      <img src="" alt="cliente 4" className="h-32 border text-center" />
-      <img src="" alt="cliente 5" className="h-32 border text-center mx-2" />
-      <img src="" alt="cliente 6" className="h-32 border text-center" />
+      <img src="" alt="cliente 1" className="h-28 border text-center mx-2 " />
+      <img src="" alt="cliente 2" className="h-28 border text-center" />
+      <img src="" alt="cliente 3" className="h-28 border text-center mx-2" />
+      <img src="" alt="cliente 4" className="h-28 border text-center" />
+      <img src="" alt="cliente 5" className="h-28 border text-center mx-2" />
+      <img src="" alt="cliente 6" className="h-28 border text-center" />
     </Slider>
   );
 }
